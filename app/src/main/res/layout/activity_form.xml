@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity">
+
+    <TextView
+        android:id="@+id/form_lbl_ra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RA"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/form_lbl_aluno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aluno"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/form_lbl_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/form_lbl_ra"
+        android:text="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/form_txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/form_lbl_email"
+        android:layout_marginTop="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/form_rbgroup_sexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/form_txt_email">
+
+        <RadioButton
+            android:id="@+id/form_rb_marculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculino"
+            android:checked="true"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/form_rb_feminino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feminino"
+            android:textSize="20sp"/>
+
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/form_lbl_nomemae"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome da Mãe"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/form_rbgroup_sexo"/>
+
+    <EditText
+        android:id="@+id/form_txt_nomemae"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/form_lbl_nomemae"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/form_lbl_nomepai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Pai"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/form_txt_nomemae"/>
+
+    <EditText
+        android:id="@+id/form_txt_nomepai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/form_lbl_nomepai"
+        android:layout_marginTop="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/form_rbgroup_estado_civil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/form_txt_nomepai">
+
+        <RadioButton
+            android:id="@+id/form_rb_solteiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solteiro"
+            android:checked="true"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/form_rb_casado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Casado"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/form_rb_divorciado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Divorciado"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/form_rb_viuvo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Viuvo"
+            android:textSize="20sp"/>
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/form_lbl_celuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celular"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/form_rbgroup_estado_civil"/>
+
+    <EditText
+        android:id="@+id/form_txt_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:layout_below="@id/form_lbl_celuar"/>
+
+    <Button
+        android:id="@+id/form_btn_ligar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/form_txt_numero"
+        android:text="ligar"/>
+
+</RelativeLayout>

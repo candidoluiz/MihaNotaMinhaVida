@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CursosActivity">
+
+    <TextView
+        android:id="@+id/curso_lbl_curso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite o curso"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/curso_txt_curso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/curso_lbl_curso"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/curso_lbl_selecione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/curso_txt_curso"
+        android:layout_centerHorizontal="true"
+        android:text="Selecione o Semestre"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"/>
+
+    <RadioGroup
+        android:id="@+id/rdgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/curso_lbl_selecione">
+
+        <RadioButton
+            android:id="@+id/rb_primeiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Primeiro"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_segundo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Segundo"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_terceiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terceiro"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_quarto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quarto"
+            android:checked="true"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_quinto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quinto"
+            android:textSize="20sp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/curso_btn_proximo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proximo"
+        android:layout_below="@id/rdgroup"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>
